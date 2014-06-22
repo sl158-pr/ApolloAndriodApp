@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_img" >
+
+    <RelativeLayout
+        android:id="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logolayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/login_panel" >
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/information_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Logout_button"
+            android:layout_marginTop="3dip" >
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/PID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="PID:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_PID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Name:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_Name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Age:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_Age"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Sex:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_Gender"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/BloodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="BloodType:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_BloodType"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/BP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="B.P:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_BP"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Email:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_Email"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/PrimaryDoctorl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Primary Doc:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_PrimaryDoc"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/SecondaryDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Second. Doc:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_SecondaryDoc"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="List of Allergies:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_Allergies"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/Diagnosiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="Recent Diagnosis:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txt_Diagnosis"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form_field"
+                    android:editable="false"
+                    android:ems="4"
+                    android:inputType="textNoSuggestions" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/button_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Diagnosis"
+        android:layout_marginTop="1dip" >
+
+        <TableRow>
+        </TableRow>
+
+        <TableRow>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Allergies"
+        android:layout_alignParentBottom="true"
+        android:text="Emergency"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/Scheduler_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emergency"
+        android:layout_alignLeft="@+id/emergency"
+        android:text="Schedule Appointment"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/ViewMyAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Scheduler_button"
+        android:layout_alignBottom="@+id/Scheduler_button"
+        android:layout_alignRight="@+id/loginlayout"
+        android:text="View Appointment"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/Update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Scheduler_button"
+        android:text="Update"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/Create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ViewMyAppointment"
+        android:layout_alignParentBottom="true"
+        android:text="Create"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/back_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="35px"
+        android:layout_alignBaseline="@+id/Create_button"
+        android:layout_alignBottom="@+id/Create_button"
+        android:layout_alignRight="@+id/ViewMyAppointment"
+        android:background="@drawable/back_button" />
+
+    <Button
+        android:id="@+id/Logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/Create_button"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ViewMyAppointment"
+        android:layout_alignBottom="@+id/ViewMyAppointment"
+        android:layout_alignRight="@+id/Logout_button"
+        android:background="@drawable/back_button" />
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_img" >
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doc_logout"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="                               "
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </TextView>
+    
+    
+    <RelativeLayout
+        android:id="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logolayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_panel" >
+
+        <TextView
+            android:id="@+id/docid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Id:"
+            android:textAppearance="?android:attr/textAppearanceSmall" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_docid"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_docname"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/username_text"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_docid"
+            android:layout_marginTop="5dp"
+            android:text="DoctorName:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_docname"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_address"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_docid"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_docname"
+            android:layout_marginTop="5dp"
+            android:text="Address:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_address"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_officehrs"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_docname"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/officehours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginTop="5dp"
+            android:text="Office Hours:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_officehrs"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/officehours"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_officehrs"
+            android:layout_marginTop="5dp"
+            android:text="Email:  "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_officehrs"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_officehrs"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_email"
+            android:layout_marginTop="5dp"
+            android:text="Details:  "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_details"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_email"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_email"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/doctype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_details"
+            android:layout_marginTop="5dp"
+            android:text="Doctor Type:  "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txt_doctype"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_details"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_details"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/form_field"
+            android:cursorVisible="true"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="21sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <Button
+        android:id="@+id/updatedoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginlayout"
+        android:layout_marginTop="44dp"
+        android:text="Update"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/updatedoc"
+        android:layout_alignBottom="@+id/updatedoc"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/updatedoc"
+        android:text="Create"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/doctor_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/loginlayout"
+        android:layout_marginBottom="32dp"
+        android:text="Logout"
+         />
+
+    <Button
+        android:id="@+id/canceldoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/admin"
+        android:layout_alignTop="@+id/doctor_logout"
+        android:background="@drawable/back_button"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

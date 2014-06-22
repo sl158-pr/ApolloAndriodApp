@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget41"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_img" >
+
+    <TextView
+        android:id="@+id/dr_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="                     "
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/admin_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="                "
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </TextView>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dr_txt"
+        android:layout_marginTop="3dip"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow android:id="@+id/row1" >
+
+            <TextView
+                android:id="@+id/txt_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="25px"
+                android:layout_span="3"
+                android:text=" Search By Patient ID/Name  "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow android:id="@+id/row2" >
+
+            <EditText
+                android:id="@+id/idname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/form_field"
+                android:inputType="textNoSuggestions"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/searchby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Search" />
+        </TableRow>
+
+        <TableRow android:id="@+id/row3" >
+
+            <TextView
+                android:id="@+id/txt_docId"
+                android:layout_width="wrap_content"
+                android:layout_height="25px"
+                android:layout_span="3"
+                android:text=" Search Doctor by ID/Name  "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow android:id="@+id/row4" >
+
+            <EditText
+                android:id="@+id/doc_idname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/form_field"
+                android:inputType="textNoSuggestions"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/searchdoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Search" />
+        </TableRow>
+
+        <TableRow android:id="@+id/row5" >
+
+            <TextView
+                android:id="@+id/txt_docId"
+                android:layout_width="wrap_content"
+                android:layout_height="25px"
+                android:layout_span="3"
+                android:singleLine="false"
+                android:text=" Search for Patients by Doctors id"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow android:id="@+id/row6" >
+
+            <EditText
+                android:id="@+id/doc_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/form_field"
+                android:inputType="textNoSuggestions"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/search_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Search" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txt_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_table"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/create_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_below="@+id/txt_hours"
+        android:layout_marginLeft="75dip"
+        android:layout_marginTop="5dip"
+        android:text="CreatePatient" >
+    </Button>
+
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_below="@+id/txt_hours"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/create_doctor"
+        android:text="ViewPatients" >
+    </Button>
+
+    <Button
+        android:id="@+id/create_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_below="@+id/create_patient"
+        android:layout_marginLeft="75dip"
+        android:layout_marginTop="5dip"
+        android:text="CreateDoctor" >
+    </Button>
+
+    <Button
+        android:id="@+id/viewdoc_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_below="@+id/create_patient"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/create_doctor"
+        android:text="ViewDoctors" >
+    </Button>
+
+    <Button
+        android:id="@+id/back_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="40px"
+        android:layout_alignRight="@+id/viewdoc_button"
+        android:layout_below="@+id/viewdoc_button"
+        android:background="@drawable/back_button" />
+
+    <Button
+        android:id="@+id/ViewMySchedule"
+        android:layout_width="100px"
+        android:layout_height="65px"
+        android:layout_alignLeft="@+id/create_doctor"
+        android:layout_alignRight="@+id/create_doctor"
+        android:layout_alignTop="@+id/back_doctor"
+        android:text="View My Appointment" />
+
+    <TextView
+        android:id="@+id/txt_doctorprofile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ViewMySchedule"
+        android:textColor="#324F17"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewdoc_button"
+        android:layout_alignTop="@+id/back_doctor"
+        android:text="Logout" />
+
+</RelativeLayout>
